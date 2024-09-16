@@ -1,5 +1,5 @@
 # Django project
-/media/
+# /media/
 # *.sqlite3
 
 # Python and others
