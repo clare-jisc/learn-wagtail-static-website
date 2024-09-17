@@ -6,6 +6,30 @@ link to GitHub: https://github.com/CodingForEverybody/wagtailify-your-static-web
 
 use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost instead of 8000 (avoid clashing with jisc-ac-uk setup)
 
+### Get a copy of this wagtail app to run on your local dev environment
+
+#### Clone project
+- in your preferred local directory run `git clone https://github.com/clare-jisc/learn-wagtail-static-website`
+- create an empty repo in your origin github with the name `learn-wagtail-static-website`
+- change the local git origin to point to your repo `git remote set-url origin https://github.com/<Your-Jisc-GitHub-Name-Here>/learn-wagtail-static-website.git`
+- run command `git push` to save a copy of your local repo to your origin github
+
+#### Run project
+- run command `python3 -m venv .venv` - to create a virtual environment or install pyenv tool as above
+- run command `source .venv/bin/activate` - to activate python virtual environment
+
+- run command `pip install -r /requirements.txt` - to install django and wagtail dependencies
+    - Django>=4.2,<5.1
+    - wagtail>=6.1,<6.2
+    - django-widget-tweaks>=1.5.0 (extra PyPi package to format forms)
+
+- run command `python manage.py migrate` - to create the database from the db schema
+
+- run command `python manage.py runserver` - to start the web server on localhost default port 8000
+
+#### Lint project templates
+- run command `pip install -U djlint` - package to install linter for django templates
+
 ### Customise python for this project
 To use different versions of python in different projects use `pyenv` https://python.land/virtual-environments/pyenv
   - `su localadmin` then `brew install pyenv`
