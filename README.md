@@ -27,6 +27,10 @@ use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost in
 
 - run command `python manage.py runserver` - to start the web server on localhost default port 8000
 
+- current wagtail admin UI login is
+    - name `clare`
+    - password `clare`
+
 #### Lint project templates
 - run command `pip install -U djlint` - package to install linter for django templates
 
