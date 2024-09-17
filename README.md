@@ -32,7 +32,7 @@ use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost in
     - password `clare`
 
 #### Lint project templates
-- run command `pip install -U djlint` - package to install linter for django templates
+- run command `pip install djlint` - package to install linter for django templates
 
 ### Customise python for this project
 To use different versions of python in different projects use `pyenv` https://python.land/virtual-environments/pyenv
