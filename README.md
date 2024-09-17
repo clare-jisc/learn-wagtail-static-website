@@ -15,7 +15,7 @@ use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost in
 - run command `git push` to save a copy of your local repo to your origin github
 
 #### Run project
-- run command `python3 -m venv .venv` - to create a virtual environment or install pyenv tool as above
+- run command `python3 -m venv .venv` - to create a virtual environment or install pyenv tool as below
 - run command `source .venv/bin/activate` - to activate python virtual environment
 
 - run command `pip install -r /requirements.txt` - to install django and wagtail dependencies
