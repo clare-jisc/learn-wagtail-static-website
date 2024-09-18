@@ -18,7 +18,7 @@ use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost in
 - run command `python3 -m venv .venv` - to create a virtual environment or install pyenv tool as below
 - run command `source .venv/bin/activate` - to activate python virtual environment
 
-- run command `pip install -r /requirements.txt` - to install django and wagtail dependencies
+- run command `pip install -r requirements.txt` - to install django and wagtail dependencies
     - Django>=4.2,<5.1
     - wagtail>=6.1,<6.2
     - django-widget-tweaks>=1.5.0 (extra PyPi package to format forms)
@@ -33,6 +33,11 @@ use PORT 8002 for `python manage.py runserver 0.0.0.0:8002` cmd for localhost in
 
 #### Lint project templates
 - run command `pip install djlint` - package to install linter for django templates
+
+#### How to use djLint for formatting
+- in terminal run
+  - `djlint . --check` for formatting html files (this is a beta tool)
+  - `djlint . --lint` for linting html files
 
 ### Customise python for this project
 To use different versions of python in different projects use `pyenv` https://python.land/virtual-environments/pyenv
@@ -114,11 +119,6 @@ source for static webpages: [Atlas - free TailwindCSS personal blog template](ht
 #### PyPi packages installed as extras in terminal 
 - pip install django-widget-tweaks
 - python -m pip install -U djlint
-
-#### How to use djLint for formatting
-- in terminal run
-  - `djlint . --check` for formatting html files (this is a beta tool)
-  - `djlint . --lint` for linting html files
 
 #### Diagram of html templates interaction
 
